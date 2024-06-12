@@ -14,6 +14,6 @@ npm install check-myanmar-phone-number
 const { checkMyanmarPhoneNumber } = require('check-myanmar-phone-number');
 
 const result = checkMyanmarPhoneNumber('0941234567');
-console.log(result); // { operator: 1, phone_number: '95941234567' }
+console.log(result); // { operatorName: 'MPT', phone_number: '95941234567' }
 ```
 

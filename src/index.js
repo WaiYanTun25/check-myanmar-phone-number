@@ -1,3 +1,5 @@
+const operatorList = require('./operatorList');
+
 const isMPT = (phone) => {
     const first4 = phone.slice(0, 4);
     const first5 = phone.slice(0, 5);
@@ -88,7 +90,9 @@ const isMPT = (phone) => {
     if ([0, 3, 4].includes(operator)) {
       return { error: "Invalid operator" };
     }
-    return { operator, phone_number };
+    const operatorName = operatorList[operator];
+   
+    return { operatorName, phone_number };
   };
   
   module.exports = { checkMyanmarPhoneNumber, isMPT, isTelenor, isOoredoo, isMyTel, isMec };
