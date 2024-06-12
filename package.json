@@ -1,0 +1,14 @@
+{
+  "name": "check-myanmar-phone-number",
+  "version": "1.0.0",
+  "description": "A utility to check and validate Myanmar phone numbers",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "check-myanmar-phone-number"
+  ],
+  "author": "WaiYanTun",
+  "license": "ISC"
+}
